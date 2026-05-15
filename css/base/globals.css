@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "DMSanc";
+  font-size: 1.6rem;
+  color: var(--color-green);
+}
+main {
+  padding-top: 80px;
+}
+.container {
+  width: 100%;
+  min-width: 320px;
+  max-width: 740px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  padding-inline: 50px;
+  box-sizing: border-box;
+}
+.section {
+  padding-block: 5rem;
+}
+.title {
+  font-size: var(--font-size-title);
+  margin-bottom: 3rem;
+  font-weight: 500;
+  font-family: "DMSanc";
+}
+
+.center {
+  text-align: center;
+}
+.link {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.link:hover {
+  color: var(--color-pink);
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 78.5%;
+  }
+  .container {
+    max-width: 1440px;
+    padding-inline: 110px;
+  }
+  .title {
+    font-size: 2.5rem;
+  }
+  .section {
+    padding-block: 4rem;
+  }
+}

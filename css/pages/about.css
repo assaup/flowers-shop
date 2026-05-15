@@ -1,0 +1,97 @@
+.section_green {
+  background-color: var(--color-green-light);
+}
+.about__img {
+  margin-bottom: 4rem;
+}
+.about__question {
+  display: block;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.about__text {
+  margin-bottom: 2rem;
+}
+.about__list {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+.about__item {
+  background:
+    linear-gradient(rgba(0, 79, 68, 0.5), rgba(0, 79, 68, 0.5)),
+    url(../../img/main-page/bg-advan.png) no-repeat center / cover;
+  color: var(--color-white);
+  padding: 0.5rem;
+}
+.teammates {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  align-items: center;
+}
+.teammate {
+  height: 385px;
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  border: 2px solid var(--color-green);
+}
+.teammate-1 {
+  background: url("../../img/team/2.png") center / cover no-repeat;
+}
+.teammate-2 {
+  background: url("../../img/team/1.png") center / cover no-repeat;
+}
+.teammate-3 {
+  background: url("../../img/team/3.png") center / cover no-repeat;
+}
+.teammate__info {
+  width: 70%;
+  background-color: rgba(0, 79, 68, 0.66);
+  padding: 1.3rem;
+  color: var(--color-white);
+}
+@media (min-width: 768px) {
+  .about-wrapper-right {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .teammate {
+    height: 470px;
+    max-width: 400px;
+  }
+}
+@media (min-width: 1028px) {
+  .about-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 8rem;
+  }
+  .about-wrapper-right {
+    width: 50%;
+  }
+  .about-wrapper-left {
+    width: 50%;
+  }
+
+  .teammates {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 3fr 1fr;
+    gap: 4rem;
+  }
+  .teammate {
+    max-width: none;
+  }
+  .teammate-1 {
+    grid-row: 1 / -1;
+    height: 100%;
+  }
+  .teammate-text {
+    grid-column: 2 / -1;
+  }
+}

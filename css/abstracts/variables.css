@@ -1,0 +1,12 @@
+:root {
+  --color-gray: rgba(217, 217, 217, 1);
+  --color-green: rgba(0, 79, 68, 1);
+  --color-pink: rgba(255, 169, 169, 1);
+  --color-green-light: rgba(0, 79, 68, 0.19);
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  --font-size-title: 2.7rem;
+  --font-size-text: 1.7rem;
+
+}

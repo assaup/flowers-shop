@@ -1,0 +1,26 @@
+.filters {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2.5rem;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+.card-flowers.hidden {
+  display: none;
+}
+
+.filter-btn.active {
+  background-color: var(--color-green);
+  color: #fff;
+  border-color: var(--color-green);
+}
+
+@media (min-width: 768px) {
+  .filters {
+    display: flex;
+    max-width: none;
+    justify-content: space-around;
+  }
+}

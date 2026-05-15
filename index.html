@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Howerest</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <script src="./js/main.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">
+      <a href="/">
+        <img src="./img/logo1.svg" alt="Логотип" />
+      </a>
+    </div>
+
+    <nav class="full-menu" id="full-menu">
+      <ul class="full-menu__list">
+        <li>
+          <a class="full-menu__link" href="./pages/about.html">О нас</a>
+        </li>
+        <li>
+          <a class="full-menu__link" href="./pages/catalog.html">Каталог</a>
+        </li>
+        <li>
+          <a class="full-menu__link" href="./pages/delivery.html">Доставка</a>
+        </li>
+        <li>
+          <a class="full-menu__link" href="./pages/reviews.html">Отзывы</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <a href="./pages/basket.html" class="header-basket">
+        <span class="cart-count" id="cart-count">0</span>
+        <svg class="header-icon" width="27" height="27" viewBox="0 0 27 27" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_221_533)">
+            <path
+              d="M9.99756 23.8411C10.9295 23.8411 11.6851 23.0905 11.6851 22.1647C11.6851 21.2389 10.9295 20.4884 9.99756 20.4884C9.06558 20.4884 8.31006 21.2389 8.31006 22.1647C8.31006 23.0905 9.06558 23.8411 9.99756 23.8411Z" />
+            <path
+              d="M20.25 23.8411C21.182 23.8411 21.9375 23.0905 21.9375 22.1647C21.9375 21.2389 21.182 20.4884 20.25 20.4884C19.318 20.4884 18.5625 21.2389 18.5625 22.1647C18.5625 23.0905 19.318 23.8411 20.25 23.8411Z" />
+            <path
+              d="M24.8101 4.00082C24.7403 3.91536 24.6523 3.84631 24.5525 3.79865C24.4526 3.75099 24.3434 3.72589 24.2326 3.72516H8.61761L9.10511 5.21523H23.2501L21.2476 14.1556H9.99761L6.57011 3.375C6.53304 3.2606 6.46866 3.15682 6.38247 3.07249C6.29627 2.98816 6.19082 2.9258 6.07511 2.89073L3.00011 1.95198C2.90556 1.92312 2.80621 1.91304 2.70774 1.92232C2.60927 1.9316 2.5136 1.96005 2.42619 2.00606C2.24968 2.09897 2.11754 2.25774 2.05886 2.44743C2.00018 2.63712 2.01977 2.8422 2.1133 3.01755C2.20683 3.1929 2.36666 3.32416 2.55761 3.38245L5.25011 4.20198L8.69261 15.005L7.46261 16.0033L7.36511 16.1002C7.06087 16.4485 6.88841 16.8912 6.87746 17.3523C6.86651 17.8133 7.01774 18.2637 7.30511 18.6258C7.50953 18.8728 7.76929 19.0688 8.06362 19.1981C8.35794 19.3275 8.67866 19.3867 9.00011 19.3709H21.5176C21.7165 19.3709 21.9073 19.2924 22.0479 19.1526C22.1886 19.0129 22.2676 18.8234 22.2676 18.6258C22.2676 18.4282 22.1886 18.2387 22.0479 18.099C21.9073 17.9593 21.7165 17.8808 21.5176 17.8808H8.88011C8.79375 17.8779 8.7096 17.8529 8.63581 17.8082C8.56201 17.7635 8.50106 17.7007 8.45883 17.6258C8.41661 17.5509 8.39455 17.4665 8.39477 17.3806C8.39499 17.2948 8.4175 17.2104 8.46011 17.1358L10.2676 15.6457H21.8476C22.021 15.6499 22.1905 15.5943 22.3272 15.4883C22.464 15.3824 22.5595 15.2326 22.5976 15.0646L24.9751 4.6341C24.9979 4.52303 24.9949 4.40825 24.9663 4.29851C24.9377 4.18877 24.8843 4.08696 24.8101 4.00082V4.00082Z" />
+          </g>
+          <defs>
+            <clipPath id="clip0_221_533">
+              <rect width="27" height="26.8212" />
+            </clipPath>
+          </defs>
+        </svg>
+      </a>
+      <a href="./pages/profile.html" class="header-profile">
+        <svg class="header-icon" width="27" height="27" viewBox="0 0 27 27" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_221_534)">
+            <path
+              d="M13.5 12.6656C14.5384 12.6656 15.5534 12.3597 16.4167 11.7866C17.2801 11.2136 17.953 10.3991 18.3504 9.44612C18.7477 8.49316 18.8517 7.44455 18.6491 6.43289C18.4466 5.42124 17.9465 4.49197 17.2123 3.76261C16.4781 3.03324 15.5426 2.53654 14.5242 2.33531C13.5058 2.13408 12.4502 2.23736 11.4909 2.63209C10.5316 3.02682 9.71166 3.69527 9.13478 4.55291C8.55791 5.41055 8.25 6.41886 8.25 7.45033C8.25 8.8335 8.80312 10.16 9.78769 11.1381C10.7723 12.1161 12.1076 12.6656 13.5 12.6656ZM13.5 3.72517C14.2417 3.72517 14.9667 3.94365 15.5834 4.35297C16.2001 4.7623 16.6807 5.34409 16.9645 6.02477C17.2484 6.70546 17.3226 7.45447 17.1779 8.17708C17.0333 8.89969 16.6761 9.56345 16.1517 10.0844C15.6272 10.6054 14.959 10.9602 14.2316 11.1039C13.5042 11.2477 12.7502 11.1739 12.0649 10.8919C11.3797 10.61 10.794 10.1325 10.382 9.51992C9.96993 8.90732 9.75 8.1871 9.75 7.45033C9.75 6.46236 10.1451 5.51485 10.8483 4.81624C11.5516 4.11764 12.5054 3.72517 13.5 3.72517Z" />
+            <path
+              d="M22.8525 18.1565C21.6497 16.8936 20.2003 15.8878 18.5929 15.2003C16.9855 14.5129 15.2538 14.1583 13.5038 14.1583C11.7537 14.1583 10.022 14.5129 8.4146 15.2003C6.80717 15.8878 5.35777 16.8936 4.155 18.1565C3.89424 18.4331 3.74941 18.7981 3.75 19.1772V23.096C3.75 23.4912 3.90804 23.8702 4.18934 24.1497C4.47065 24.4291 4.85218 24.5861 5.25 24.5861H21.75C22.1478 24.5861 22.5294 24.4291 22.8107 24.1497C23.092 23.8702 23.25 23.4912 23.25 23.096V19.1772C23.2526 18.7992 23.1105 18.4343 22.8525 18.1565ZM21.75 23.096H5.25V19.1697C6.31292 18.0579 7.59247 17.1725 9.01077 16.5675C10.4291 15.9625 11.9565 15.6505 13.5 15.6505C15.0435 15.6505 16.5709 15.9625 17.9892 16.5675C19.4075 17.1725 20.6871 18.0579 21.75 19.1697V23.096Z" />
+          </g>
+          <defs>
+            <clipPath id="clip0_221_534">
+              <rect width="27" height="26.8212" />
+            </clipPath>
+          </defs>
+        </svg>
+      </a>
+      <button class="burger" id="burger">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+    </div>
+  </header>
+  <div class="overlay" id="overlay"></div>
+  <main>
+    <section class="section section-main">
+      <div class="container main-content">
+        <div class="main-wrapper-right">
+          <h1 class="main__title">Там, где расцветают чувства</h1>
+          <p class="main__text">
+            Каждый лепесток - это слово. Каждый бутон - это взгляд. Позвольте
+            цветам сказать то, что не выразить словами.
+          </p>
+          <div class="btns-main">
+            <button class="btn btn-main btn-buy">Сделать заказ</button>
+            <a href="./pages/catalog.html" class="btn btn-main">В каталог</a>
+          </div>
+        </div>
+        <div class="main-wrapper-left">
+          <div class="main-item main-item-1">
+            <div class="inner-green">Новинка</div>
+          </div>
+
+          <a class="main-item main-item-2" href="./pages/recommendation.html">
+            <div class="inner-green">Рекомендуем</div>
+            <div class="main-item-2__info">
+              <h3 class="main-item-2__title">Белые розы</h3>
+              <img src="./img/main-page/arrow-forward.png" alt="" />
+            </div>
+          </a>
+          <div class="main-item main-item-3">
+            <div class="inner-green">Популярное</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <section class="section recommendations">
+        <h2 class="title">Рекомендуемое</h2>
+        <div class="cards-flowers">
+          <div class="card-flowers">
+            <img src="./img/card-flowers/1.jpg" alt="" class="card-img" />
+            <div class="card-info">
+              <h2 class="card-title">Небесный цвет</h2>
+              <p class="card-price">5100 ₽</p>
+            </div>
+            <div class="btns">
+              <button class="btn add-to-cart">В корзину</button>
+              <button class="btn btn-green btn-buy">Купить</button>
+            </div>
+          </div>
+          <div class="card-flowers">
+            <img src="./img/card-flowers/2.png" alt="" class="card-img" />
+            <div class="card-info">
+              <h2 class="card-title">Мечта принцессы</h2>
+              <p class="card-price">4750 ₽</p>
+            </div>
+            <div class="btns">
+              <button class="btn add-to-cart">В корзину</button>
+              <button class="btn btn-green btn-buy">Купить</button>
+            </div>
+          </div>
+          <div class="card-flowers">
+            <img src="./img/card-flowers/3.jpg" alt="" class="card-img" />
+            <div class="card-info">
+              <h2 class="card-title">Лазурные грезы</h2>
+              <p class="card-price">4999 ₽</p>
+            </div>
+            <div class="btns">
+              <button class="btn add-to-cart">В корзину</button>
+              <button class="btn btn-green btn-buy">Купить</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="center">
+          <a href="./pages/recommendation.html" class="link link-more">Смотреть еще →</a>
+        </div>
+      </section>
+    </div>
+    <section class="section section-new-product">
+      <div class="container">
+        <h2 class="title">Новые поступления</h2>
+        <div class="cards-flowers">
+          <div class="card-flowers">
+            <img src="./img/card-flowers/3.jpg" alt="" class="card-img" />
+            <div class="card-info">
+              <h2 class="card-title">Цветы лотоса</h2>
+              <p class="card-price">300 ₽/шт.</p>
+            </div>
+            <div class="btns">
+              <button class="btn add-to-cart">В корзину</button>
+              <button class="btn btn-green btn-buy">Купить</button>
+            </div>
+          </div>
+          <div class="card-flowers">
+            <img src="./img/card-flowers/4.jpg" alt="" class="card-img" />
+            <div class="card-info">
+              <h2 class="card-title">Подсолнухи</h2>
+              <p class="card-price">285 ₽/шт.</p>
+            </div>
+            <div class="btns">
+              <button class="btn add-to-cart">В корзину</button>
+              <button class="btn btn-green btn-buy">Купить</button>
+            </div>
+          </div>
+          <div class="card-flowers">
+            <img src="./img/card-flowers/3.jpg" alt="" class="card-img" />
+            <div class="card-info">
+              <h2 class="card-title">Цветы лотоса</h2>
+              <p class="card-price">300 ₽/шт.</p>
+            </div>
+            <div class="btns">
+              <button class="btn add-to-cart">В корзину</button>
+              <button class="btn btn-green btn-buy">Купить</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="center">
+          <a href="./pages/catalog.html" class="link link-more-2">Смотреть еще →</a>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <section class="section">
+        <h2 class="title">Наши преимущества</h2>
+        <div class="advantages">
+          <div class="advantage">
+            <h3 class="advantage__title">
+              <span class="advantage__number">01</span> Экспертность
+            </h3>
+            <p>
+              Поможем выбрать тот самый букет. А перед отправкой покажем фото
+              — чтобы вы были уверены на 100%.
+            </p>
+          </div>
+          <div class="advantage">
+            <h3 class="advantage__title">
+              <span class="advantage__number">02</span> Гибкость
+            </h3>
+            <p>
+              Картой, наличными, онлайн — выбирайте. При доставке курьером
+              можно рассчитаться на месте.
+            </p>
+          </div>
+          <div class="advantage">
+            <h3 class="advantage__title">
+              <span class="advantage__number">03</span> Стиль
+            </h3>
+            <p>
+              Красивая упаковка и лента — уже включены. Никакой лишней суеты.
+            </p>
+          </div>
+          <div class="advantage">
+            <h3 class="advantage__title">
+              <span class="advantage__number">04</span> Скорость
+            </h3>
+            <p>
+              Доставим от 45 минут по Москве. Своим курьером или через Яндекс
+              — аккуратно и в срок.
+            </p>
+          </div>
+        </div>
+        <div class="center">
+          <button class="link link-more">Сделать заказ →</button>
+        </div>
+      </section>
+    </div>
+    <div class="modal" id="modal">
+      <div class="modal__overlay" id="modal-overlay"></div>
+
+      <div class="modal__content">
+        <button class="modal__close" id="modal-close">×</button>
+
+        <h3 class="modal__title">Оформить заказ</h3>
+
+        <form class="modal__form" novalidate>
+          <label class="form__label">
+            Фамилия
+            <input type="text" class="form__input" placeholder="Дрозд" />
+          </label>
+          <label class="form__label">
+            Имя
+            <input type="text" class="form__input" placeholder="Ксения" />
+          </label>
+          <label class="form__label">
+            Телефон
+            <input type="tel" class="form__input" placeholder="+71234567890" />
+          </label>
+          <label class="form__label">
+            Адрес
+            <input type="text" class="form__input" placeholder="Москва, ул. Молодежная, д1, кв7" />
+          </label>
+          <label class="form__label">
+            Комментарий
+            <textarea class="form__input"></textarea>
+          </label>
+          <div class="text-center">
+            <button class="btn btn_action" type="submit">Оформить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container footer-cont">
+      <div class="footer-cont__top">
+        <a href="/">
+          <img src="./img/logo.svg" alt="logo" />
+        </a>
+        <div class="footer__block">
+          <h3 class="footer__title">Навигация</h3>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="link" href="./pages/about.html">О нас</a>
+            </li>
+            <li class="footer__item">
+              <a class="link" href="./pages/catalog.html">Каталог</a>
+            </li>
+            <li class="footer__item">
+              <a class="link" href="./pages/reviews.html">Отзывы</a>
+            </li>
+            <li class="footer__item">
+              <a class="link" href="./pages/delivery.html">Доставка</a>
+            </li>
+            <li class="footer__item">
+              <a class="link" href="./pages/basket.html">Корзина</a>
+            </li>
+            <li class="footer__item">
+              <a class="link" href="./pages/profile.html">Профиль</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__block">
+          <h3 class="footer__title">Контакты</h3>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="link" href="#">+7 (123) 456-78-90</a>
+            </li>
+            <li class="footer__item">
+              <a class="link" href="#">black_bird@icloud.com</a>
+            </li>
+            <li>
+              <div class="footer__networks">
+                <img src="./img/footer/MAX.svg" alt="" class="network-icon" />
+                <img src="./img/footer/Telegram.svg" alt="" class="network-icon" />
+                <img src="./img/footer/VK.svg" alt="" class="network-icon" />
+              </div>
+            </li>
+            <li>
+              <iframe
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3A52e5e6a4a6f6991aca93e91b4d453ca29bb0eb1a82e586d2be83310b5b76d53d&amp;source=constructor"
+                width="100%" height="250" frameborder="0"></iframe>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+<script>
+  // modal
+  const buyBtn = document.querySelectorAll(".btn-buy");
+  const modal = document.getElementById("modal");
+  const modalOverlay = document.getElementById("modal-overlay");
+  const modalClose = document.getElementById("modal-close");
+  const form = document.querySelector(".modal__form");
+
+  buyBtn.forEach((b) =>
+    b.addEventListener("click", () => {
+      modal.classList.add("modal--open");
+    }),
+  );
+
+  modalOverlay.addEventListener("click", () => {
+    modal.classList.remove("modal--open");
+  });
+
+  modalClose.addEventListener("click", () => {
+    modal.classList.remove("modal--open");
+  });
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    let isValid = true;
+
+    const fields = [
+      {
+        input: form.querySelector('input[placeholder="Дрозд"]'),
+        name: "Фамилия",
+      },
+      {
+        input: form.querySelector('input[placeholder="Ксения"]'),
+        name: "Имя",
+      },
+      { input: form.querySelector('input[type="tel"]'), name: "Телефон" },
+      {
+        input: form.querySelector('input[placeholder^="Москва"]'),
+        name: "Адрес",
+      },
+    ];
+
+    fields.forEach(({ input, name }) => {
+      const error = input.parentElement.querySelector(".form__error");
+      if (error) error.remove();
+
+      const value = input.value.trim();
+      let errorMsg = "";
+
+      if (!value) {
+        errorMsg = "Поле обязательно для заполнения";
+      } else if (name === "Телефон" && !/^\+7\d{10}$/.test(value)) {
+        errorMsg = "Введите телефон в формате +71234567890";
+      }
+
+      if (errorMsg) {
+        isValid = false;
+        input.classList.add("form__input--error");
+        const span = document.createElement("span");
+        span.className = "form__error";
+        span.textContent = errorMsg;
+        input.parentElement.appendChild(span);
+      } else {
+        input.classList.remove("form__input--error");
+      }
+    });
+
+    if (isValid) {
+      // здесь отправка данных
+      alert("Заказ оформлен!");
+      form.reset();
+      document.getElementById("modal").classList.remove("modal--open");
+    }
+  });
+
+  // убираем ошибку при вводе
+  form.querySelectorAll(".form__input").forEach((input) => {
+    input.addEventListener("input", () => {
+      input.classList.remove("form__input--error");
+      const error = input.parentElement.querySelector(".form__error");
+      if (error) error.remove();
+    });
+  });
+  document.addEventListener("DOMContentLoaded", () => {
+    updateCartCount();
+  });
+  // добавление в корзину
+  document.querySelectorAll(".add-to-cart").forEach((button) => {
+    button.addEventListener("click", () => {
+      const card = button.closest(".card-flowers");
+
+      const title = card.querySelector(".card-title").textContent;
+      const price = card.querySelector(".card-price").textContent;
+      const img = card.querySelector(".card-img").getAttribute("src");
+
+      const cart = getCart();
+
+      const existingItem = cart.find((item) => item.title === title);
+
+      if (existingItem) {
+        existingItem.qty += 1;
+      } else {
+        cart.push({
+          title,
+          price,
+          img,
+          qty: 1,
+        });
+      }
+
+      saveCart(cart);
+
+      // обновляем счетчик
+      updateCartCount();
+
+      showToast("Товар добавлен в корзину");
+    });
+  });
+</script>
+
+</html>
